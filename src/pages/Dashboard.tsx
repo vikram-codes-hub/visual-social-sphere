@@ -28,6 +28,30 @@ const engagementData = [
   { month: "Jul", engagement: 80 }
 ];
 
+// Stat card component
+const StatCard = ({ title, value, change, icon }) => {
+  const isPositive = change.startsWith('+');
+  
+  return (
+    <Card>
+      <CardContent className="pt-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-sm text-muted-foreground mb-1">{title}</p>
+            <p className="text-3xl font-bold">{value}</p>
+            <p className={`text-xs mt-1 ${isPositive ? 'text-green-500' : 'text-red-500'}`}>
+              {change} from last month
+            </p>
+          </div>
+          <div className="p-2 bg-gray-100 rounded-full">
+            {icon}
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
 const Dashboard = () => {
   return (
     <PageLayout>
@@ -240,30 +264,6 @@ const Dashboard = () => {
         </div>
       </div>
     </PageLayout>
-  );
-};
-
-// Stat card component
-const StatCard = ({ title, value, change, icon }) => {
-  const isPositive = change.startsWith('+');
-  
-  return (
-    <Card>
-      <CardContent className="pt-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm text-muted-foreground mb-1">{title}</p>
-            <p className="text-3xl font-bold">{value}</p>
-            <p className={`text-xs mt-1 ${isPositive ? 'text-green-500' : 'text-red-500'}`}>
-              {change} from last month
-            </p>
-          </div>
-          <div className="p-2 bg-gray-100 rounded-full">
-            {icon}
-          </div>
-        </div>
-      </CardContent>
-    </Card>
   );
 };
 
