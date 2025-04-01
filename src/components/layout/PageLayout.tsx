@@ -29,9 +29,9 @@ const PageLayout = ({ children }: PageLayoutProps) => {
     <div className="min-h-screen flex flex-col bg-social-light">
       <Navbar />
       
-      <SidebarProvider>
+      <SidebarProvider defaultCollapsed={isMobile}>
         <div className="flex flex-1 w-full">
-          <Sidebar defaultCollapsed={isMobile}>
+          <Sidebar>
             <SidebarContent>
               <SidebarGroup>
                 <div className="px-3 py-4">
