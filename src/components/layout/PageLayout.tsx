@@ -13,7 +13,7 @@ import {
   SidebarTrigger
 } from "@/components/ui/sidebar";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Home, User, Users, Bookmark, Settings, PlusCircle } from "lucide-react";
+import { Home, User, Users, Bookmark, Settings, PlusCircle, LayoutDashboard } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -29,7 +29,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
     <div className="min-h-screen flex flex-col bg-social-light">
       <Navbar />
       
-      <SidebarProvider defaultCollapsed={isMobile}>
+      <SidebarProvider defaultOpen={!isMobile}>
         <div className="flex flex-1 w-full">
           <Sidebar>
             <SidebarContent>
@@ -52,6 +52,14 @@ const PageLayout = ({ children }: PageLayoutProps) => {
                           <Link to="/" className="flex items-center gap-3">
                             <Home className="h-5 w-5" />
                             <span>Home</span>
+                          </Link>
+                        </SidebarMenuButton>
+                      </SidebarMenuItem>
+                      <SidebarMenuItem>
+                        <SidebarMenuButton asChild>
+                          <Link to="/dashboard" className="flex items-center gap-3">
+                            <LayoutDashboard className="h-5 w-5" />
+                            <span>Dashboard</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
