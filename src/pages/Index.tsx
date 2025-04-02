@@ -3,6 +3,9 @@ import PageLayout from "@/components/layout/PageLayout";
 import CreatePostCard from "@/components/post/CreatePostCard";
 import PostCard from "@/components/post/PostCard";
 import UserCard from "@/components/user/UserCard";
+import PopularHashtags from "@/components/dashboard/PopularHashtags";
+import StatCard from "@/components/dashboard/StatCard";
+import { ArrowUpRight, LineChart, DollarSign, Wallet } from "lucide-react";
 import { useEffect, useState } from "react";
 
 // Mock data
@@ -91,6 +94,27 @@ const Index = () => {
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              <StatCard 
+                title="Bitcoin Price" 
+                value="$47,893" 
+                change="+5.4%" 
+                icon={<DollarSign className="h-5 w-5 text-[#eb63ff]" />} 
+              />
+              <StatCard 
+                title="Portfolio Value" 
+                value="$12,456" 
+                change="+2.1%" 
+                icon={<Wallet className="h-5 w-5 text-[#eb63ff]" />} 
+              />
+              <StatCard 
+                title="24h Trading Vol" 
+                value="$1.2B" 
+                change="-0.8%" 
+                icon={<LineChart className="h-5 w-5 text-[#eb63ff]" />} 
+              />
+            </div>
+            
             <CreatePostCard />
             
             {loading ? (
@@ -133,17 +157,7 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="social-card p-4">
-              <h3 className="font-medium text-lg mb-4">Trending Topics</h3>
-              <div className="space-y-2">
-                {["#photography", "#travel", "#design", "#technology", "#food"].map(tag => (
-                  <div key={tag} className="py-2 hover:bg-gray-50 rounded transition-colors cursor-pointer">
-                    <p className="text-social-blue">{tag}</p>
-                    <p className="text-xs text-muted-foreground">{Math.floor(Math.random() * 1000)} posts</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <PopularHashtags />
           </div>
         </div>
       </div>
