@@ -3,28 +3,35 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-interface EngagementData {
+interface PriceData {
   month: string;
-  engagement: number;
+  price: number;
 }
 
 interface EngagementChartProps {
-  data: EngagementData[];
+  data: PriceData[];
 }
 
 const EngagementChart = ({ data }: EngagementChartProps) => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Engagement Growth</CardTitle>
+        <CardTitle>Price History</CardTitle>
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
             <XAxis dataKey="month" />
             <YAxis />
-            <Tooltip />
-            <Line type="monotone" dataKey="engagement" stroke="#3b82f6" strokeWidth={2} />
+            <Tooltip formatter={(value) => [`$${value.toLocaleString()}`, 'Price']} />
+            <Line 
+              type="monotone" 
+              dataKey="price" 
+              stroke="#eb63ff" 
+              strokeWidth={2} 
+              dot={{ fill: '#eb63ff', strokeWidth: 2 }}
+              activeDot={{ r: 8 }}
+            />
           </LineChart>
         </ResponsiveContainer>
       </CardContent>

@@ -5,9 +5,9 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recha
 
 interface ActivityData {
   day: string;
-  posts: number;
-  likes: number;
-  comments: number;
+  trades: number;
+  volume: number;
+  profit: number;
 }
 
 interface ActivityChartProps {
@@ -18,7 +18,7 @@ const ActivityChart = ({ data }: ActivityChartProps) => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Weekly Activity</CardTitle>
+        <CardTitle>Weekly Trading Activity</CardTitle>
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={300}>
@@ -26,9 +26,9 @@ const ActivityChart = ({ data }: ActivityChartProps) => {
             <XAxis dataKey="day" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="posts" name="Posts" fill="#3b82f6" />
-            <Bar dataKey="likes" name="Likes" fill="#ec4899" />
-            <Bar dataKey="comments" name="Comments" fill="#8b5cf6" />
+            <Bar dataKey="trades" name="Trades" fill="#3b82f6" />
+            <Bar dataKey="volume" name="Volume" fill="#eb63ff" />
+            <Bar dataKey="profit" name="Profit" fill="#10b981" />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>

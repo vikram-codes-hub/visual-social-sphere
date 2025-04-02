@@ -13,7 +13,7 @@ import {
   SidebarTrigger
 } from "@/components/ui/sidebar";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Home, User, Users, Bookmark, Settings, PlusCircle, LayoutDashboard } from "lucide-react";
+import { Home, User, Settings, PlusCircle, LayoutDashboard, Wallet, LineChart, Bitcoin, BadgeDollarSign, Landmark } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -67,23 +67,23 @@ const PageLayout = ({ children }: PageLayoutProps) => {
                         <SidebarMenuButton asChild>
                           <Link to="/profile" className="flex items-center gap-3">
                             <User className="h-5 w-5" />
-                            <span>Profile</span>
+                            <span>Portfolio</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                       <SidebarMenuItem>
                         <SidebarMenuButton asChild>
                           <Link to="/friends" className="flex items-center gap-3">
-                            <Users className="h-5 w-5" />
-                            <span>Friends</span>
+                            <Bitcoin className="h-5 w-5" />
+                            <span>Cryptocurrencies</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                       <SidebarMenuItem>
                         <SidebarMenuButton asChild>
                           <Link to="/saved" className="flex items-center gap-3">
-                            <Bookmark className="h-5 w-5" />
-                            <span>Saved Posts</span>
+                            <Wallet className="h-5 w-5" />
+                            <span>Wallets</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
@@ -100,8 +100,8 @@ const PageLayout = ({ children }: PageLayoutProps) => {
                 </div>
               </SidebarGroup>
               <div className="px-3 mt-auto pb-4">
-                <Button className="w-full social-button-primary">
-                  <PlusCircle className="mr-2 h-4 w-4" /> Create Post
+                <Button className="w-full" variant="custom">
+                  <PlusCircle className="mr-2 h-4 w-4" /> Buy Crypto
                 </Button>
               </div>
             </SidebarContent>

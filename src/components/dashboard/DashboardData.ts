@@ -1,21 +1,37 @@
 
-// Mock data for dashboard
+// Mock data for crypto dashboard
 export const activityData = [
-  { day: "Mon", posts: 4, likes: 12, comments: 8 },
-  { day: "Tue", posts: 2, likes: 18, comments: 10 },
-  { day: "Wed", posts: 5, likes: 24, comments: 12 },
-  { day: "Thu", posts: 3, likes: 16, comments: 7 },
-  { day: "Fri", posts: 7, likes: 32, comments: 15 },
-  { day: "Sat", posts: 6, likes: 29, comments: 13 },
-  { day: "Sun", posts: 4, likes: 22, comments: 9 },
+  { day: "Mon", trades: 4, volume: 12, profit: 8 },
+  { day: "Tue", trades: 2, volume: 18, profit: 10 },
+  { day: "Wed", trades: 5, volume: 24, profit: 12 },
+  { day: "Thu", trades: 3, volume: 16, profit: 7 },
+  { day: "Fri", trades: 7, volume: 32, profit: 15 },
+  { day: "Sat", trades: 6, volume: 29, profit: 13 },
+  { day: "Sun", trades: 4, volume: 22, profit: 9 },
 ];
 
-export const engagementData = [
-  { month: "Jan", engagement: 45 },
-  { month: "Feb", engagement: 52 },
-  { month: "Mar", engagement: 49 },
-  { month: "Apr", engagement: 62 },
-  { month: "May", engagement: 58 },
-  { month: "Jun", engagement: 75 },
-  { month: "Jul", engagement: 80 }
+export const priceData = [
+  { month: "Jan", price: 45000 },
+  { month: "Feb", price: 52000 },
+  { month: "Mar", price: 49000 },
+  { month: "Apr", price: 62000 },
+  { month: "May", price: 58000 },
+  { month: "Jun", price: 75000 },
+  { month: "Jul", price: 80000 }
+];
+
+export const topCryptos = [
+  { name: "Bitcoin", symbol: "BTC", price: 63482.21, change: "+2.4%" },
+  { name: "Ethereum", symbol: "ETH", price: 3421.65, change: "+1.8%" },
+  { name: "Solana", symbol: "SOL", price: 142.87, change: "+5.2%" },
+  { name: "Cardano", symbol: "ADA", price: 0.58, change: "-0.7%" },
+  { name: "Ripple", symbol: "XRP", price: 0.62, change: "+0.3%" },
+];
+
+export const portfolioData = [
+  { asset: "Bitcoin", allocation: 40 },
+  { asset: "Ethereum", allocation: 30 },
+  { asset: "Solana", allocation: 15 },
+  { asset: "Cardano", allocation: 10 },
+  { asset: "Others", allocation: 5 },
 ];
