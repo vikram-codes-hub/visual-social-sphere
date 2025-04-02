@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Calendar, Edit2, Image, Link, MapPin, User } from "lucide-react";
 
-// Mock data
+// Updated profileData without crypto references
 const profileData = {
   id: "user1",
   name: "Emma Thompson",
@@ -146,7 +146,7 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Tabs */}
+        {/* Tabs - kept same as before */}
         <Tabs 
           defaultValue="posts" 
           value={activeTab} 

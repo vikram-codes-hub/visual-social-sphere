@@ -1,4 +1,3 @@
-
 import { ReactNode } from "react";
 import Navbar from "./Navbar";
 import { 
@@ -13,7 +12,7 @@ import {
   SidebarTrigger
 } from "@/components/ui/sidebar";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Home, User, Settings, PlusCircle, LayoutDashboard, Wallet, LineChart, Bitcoin, BadgeDollarSign, Landmark } from "lucide-react";
+import { Home, User, Settings, LayoutDashboard, Wallet, LineChart, Bitcoin, BadgeDollarSign, Landmark } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -99,11 +98,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
                   </SidebarGroupContent>
                 </div>
               </SidebarGroup>
-              <div className="px-3 mt-auto pb-4">
-                <Button className="w-full" variant="custom">
-                  <PlusCircle className="mr-2 h-4 w-4" /> Buy Crypto
-                </Button>
-              </div>
+              
             </SidebarContent>
           </Sidebar>
           
