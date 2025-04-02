@@ -26,11 +26,11 @@ export function Sidebar() {
                 <Link to="/profile" className="flex items-center gap-3 mb-8">
                   <Avatar>
                     <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>JD</AvatarFallback>
+                    <AvatarFallback></AvatarFallback>
                   </Avatar>
                   <div>
-                    <p className="font-medium">John Doe</p>
-                    <p className="text-sm text-muted-foreground">@johndoe</p>
+                    <p className="font-medium">Vikram singh gangwar</p>
+                    <p className="text-sm text-muted-foreground">Vikram</p>
                   </div>
                 </Link>
                 <SidebarGroupContent>

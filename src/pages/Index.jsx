@@ -8,17 +8,18 @@ import PopularHashtags from "@/components/dashboard/PopularHashtags";
 import StatCard from "@/components/dashboard/StatCard";
 import { LineChart, Wallet } from "lucide-react";
 
+
 // Mock data
 const mockPosts = [
   {
     id: "post1",
     author: {
       id: "user1",
-      name: "Emma Thompson",
-      username: "emma_designs",
-      avatar: "https://i.pravatar.cc/150?img=1"
+      name: "Vikram singh gangwar",
+        username: "Vikram",
+        avatar: "https://github.com/shadcn.png"
     },
-    content: "Just finished a new logo design for a client! What do you think? #design #logo #creative",
+    content: "Just finished a new logo design ! What do you think? #design #logo #creative",
     image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=1470",
     timestamp: "2 hours ago",
     likes: 24,
@@ -30,8 +31,8 @@ const mockPosts = [
     id: "post2",
     author: {
       id: "user2",
-      name: "Alex Johnson",
-      username: "alexj",
+      name: "Ritik Raj",
+      username: "Raju",
       avatar: "https://i.pravatar.cc/150?img=2"
     },
     content: "Had an amazing time hiking in the mountains this weekend. Nature is truly the best therapy.",
@@ -62,15 +63,15 @@ const mockPosts = [
 const suggestedUsers = [
   {
     id: "user4",
-    name: "David Chen",
-    username: "davidc",
+    name: "Vikash Kumar",
+    username: "Viku",
     avatar: "https://i.pravatar.cc/150?img=4",
     bio: "Software Engineer | Coffee Enthusiast | Dog Lover"
   },
   {
     id: "user5",
-    name: "Jessica Taylor",
-    username: "jessicaT",
+    name: "Manya Singh",
+    username: "Manu",
     avatar: "https://i.pravatar.cc/150?img=5",
     bio: "Travel photographer | Published in National Geographic"
   }
@@ -97,13 +98,13 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <StatCard 
                 title="Portfolio Value" 
-                value="$12,456" 
+                value="₹12,456" 
                 change="+2.1%" 
                 icon={<Wallet className="h-5 w-5 text-[#9709a7]" />} 
               />
               <StatCard 
-                title="24h Trading Vol" 
-                value="$1.2B" 
+                title="24h Audience  Vol" 
+                value="1.2M" 
                 change="-0.8%" 
                 icon={<LineChart className="h-5 w-5 text-[#9709a7]" />} 
               />
@@ -151,7 +152,7 @@ const Index = () => {
               </div>
             </div>
             
-            <PopularHashtags />
+           
           </div>
         </div>
       </div>

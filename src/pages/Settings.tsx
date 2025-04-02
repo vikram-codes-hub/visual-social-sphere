@@ -78,27 +78,26 @@ const Settings = () => {
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" defaultValue="Emma Thompson" />
+                  <Input id="name" defaultValue="Vikram singh gangwar" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="username">Username</Label>
-                  <Input id="username" defaultValue="emma_designs" />
+                  <Input id="username" defaultValue="@Vikram" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="bio">Bio</Label>
                   <Textarea 
                     id="bio" 
-                    defaultValue="Graphic designer and typography enthusiast. Creating visual stories that connect people."
-                    className="min-h-[100px]"
+                    defaultValue="Chill karo"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="location">Location</Label>
-                  <Input id="location" defaultValue="San Francisco, CA" />
+                  <Input id="location" defaultValue="Bareilly,U.P." />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="website">Website</Label>
-                  <Input id="website" defaultValue="emmadesigns.com" />
+                  <Input id="website" defaultValue=".." />
                 </div>
               </CardContent>
               <CardFooter>

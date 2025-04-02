@@ -17,6 +17,8 @@ import { Home, User, Settings, LayoutDashboard, Wallet, LineChart, Bitcoin, Badg
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { FaUserFriends } from "react-icons/fa";
+import { IoMdBookmark } from "react-icons/io";
 
 const PageLayout = ({ children }) => {
   const isMobile = useIsMobile();
@@ -63,23 +65,23 @@ const PageLayout = ({ children }) => {
                         <SidebarMenuButton asChild>
                           <Link to="/profile" className="flex items-center gap-3">
                             <User className="h-5 w-5" />
-                            <span>Portfolio</span>
+                            <span>Profile</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                       <SidebarMenuItem>
                         <SidebarMenuButton asChild>
                           <Link to="/friends" className="flex items-center gap-3">
-                            <Bitcoin className="h-5 w-5" />
-                            <span>Cryptocurrencies</span>
+                            <FaUserFriends className="h-5 w-5" />
+                            <span>Friends</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                       <SidebarMenuItem>
                         <SidebarMenuButton asChild>
                           <Link to="/saved" className="flex items-center gap-3">
-                            <Wallet className="h-5 w-5" />
-                            <span>Wallets</span>
+                            <IoMdBookmark  className="h-5 w-5" />
+                            <span>Saved post</span>
                           </Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>

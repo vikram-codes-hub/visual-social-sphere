@@ -10,13 +10,13 @@ import { Calendar, Edit2, Image, Link, MapPin, User } from "lucide-react";
 // Updated profileData without crypto references
 const profileData = {
   id: "user1",
-  name: "Emma Thompson",
-  username: "emma_designs",
-  avatar: "https://i.pravatar.cc/150?img=1",
+  name: "Vikram singh gangwar",
+  username: "@Vikram",
+  avatar: "https://github.com/shadcn.png",
   coverImage: "https://images.unsplash.com/photo-1587502537104-aac10f5fb6f7?auto=format&fit=crop&q=80&w=1470",
-  bio: "Graphic designer and typography enthusiast. Creating visual stories that connect people.",
-  location: "San Francisco, CA",
-  website: "emmadesigns.com",
+  bio: "Chill guy",
+  location: "Bareilly,U.P.",
+  website: "..",
   joinDate: "January 2019",
   following: 284,
   followers: 2942,
@@ -25,11 +25,11 @@ const profileData = {
       id: "post1",
       author: {
         id: "user1",
-        name: "Emma Thompson",
-        username: "emma_designs",
-        avatar: "https://i.pravatar.cc/150?img=1"
+        name: "Vikram singh gangwar",
+        username: "@Vikram",
+        avatar: "https://github.com/shadcn.png"
       },
-      content: "Just finished a new logo design for a client! What do you think? #design #logo #creative",
+      content: "Just finished a new logo design ! What do you think? #design #logo #creative",
       image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=1470",
       timestamp: "2 hours ago",
       likes: 24,
@@ -41,9 +41,9 @@ const profileData = {
       id: "post4",
       author: {
         id: "user1",
-        name: "Emma Thompson",
-        username: "emma_designs",
-        avatar: "https://i.pravatar.cc/150?img=1"
+        name: "Vikram singh gangwar",
+        username: "@Vikram",
+        avatar: "https://github.com/shadcn.png"
       },
       content: "Working on some new typography concepts today. Always exploring new ways to make text more impactful.",
       image: "https://images.unsplash.com/photo-1516131206008-dd041a9764fd?auto=format&fit=crop&q=80&w=1470",

@@ -4,6 +4,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import styled from "styled-components"
+
+
 
 const Navbar = () => {
   return (
@@ -13,7 +16,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2">
             <div className="h-8 w-8 overflow-hidden rounded-full">
               <img 
-                src="/lovable-uploads/b00f82a1-6a90-4ecf-b450-e416a7f6b394.png" 
+                src="./logo.jpg" //img /lovable-uploads/b00f82a1-6a90-4ecf-b450-e416a7f6b394.png
                 alt="Vartual Token" 
                 className="h-full w-full object-cover"
               />
@@ -46,6 +49,12 @@ const Navbar = () => {
               5
             </span>
           </Button>
+          <Button variant="ghost" size="icon" className="relative">
+            <Imgdiv src="/lovable-uploads/b00f82a1-6a90-4ecf-b450-e416a7f6b394.png"/>
+            <span className="absolute -top-1 -right-1 bg-[#eb63ff] text-white rounded-full h-5 w-5 text-xs flex items-center justify-center">
+              5
+            </span>
+          </Button>
           <Link to="/profile">
             <Avatar className="cursor-pointer">
               <AvatarImage src="https://github.com/shadcn.png" />
@@ -61,3 +70,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+const Imgdiv=styled.img`
+height:25px;
+width:25px;
+margin-top:-3px
+`

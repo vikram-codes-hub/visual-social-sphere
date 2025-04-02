@@ -11,8 +11,8 @@ const savedPosts = [
     id: "post2",
     author: {
       id: "user2",
-      name: "Alex Johnson",
-      username: "alexj",
+      name: "Ritik Raj",
+      username: "Raju",
       avatar: "https://i.pravatar.cc/150?img=2"
     },
     content: "Had an amazing time hiking in the mountains this weekend. Nature is truly the best therapy.",
@@ -27,9 +27,9 @@ const savedPosts = [
     id: "post4",
     author: {
       id: "user1",
-      name: "Emma Thompson",
-      username: "emma_designs",
-      avatar: "https://i.pravatar.cc/150?img=1"
+      name: "Vikram singh gangwar",
+      username: "Vikram",
+      avatar: "https://github.com/shadcn.png"
     },
     content: "Working on some new typography concepts today. Always exploring new ways to make text more impactful.",
     image: "https://images.unsplash.com/photo-1516131206008-dd041a9764fd?auto=format&fit=crop&q=80&w=1470",

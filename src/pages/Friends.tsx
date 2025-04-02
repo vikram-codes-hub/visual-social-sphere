@@ -9,32 +9,32 @@ import { useState } from "react";
 const allUsers = [
   {
     id: "user2",
-    name: "Alex Johnson",
-    username: "alexj",
+    name: "Ritik raj",
+    username: "@Raju",
     avatar: "https://i.pravatar.cc/150?img=2",
     bio: "Software developer and tech enthusiast",
     isFollowing: true
   },
   {
     id: "user3",
-    name: "Sarah Williams",
-    username: "sarahw",
+    name: "Piyush",
+    username: "Piyu",
     avatar: "https://i.pravatar.cc/150?img=3",
     bio: "Photographer and travel blogger",
     isFollowing: true
   },
   {
     id: "user4",
-    name: "David Chen",
-    username: "davidc",
+    name: "Aryan",
+    username: "@guptaji",
     avatar: "https://i.pravatar.cc/150?img=4",
     bio: "Software Engineer | Coffee Enthusiast | Dog Lover",
     isFollowing: false
   },
   {
     id: "user5",
-    name: "Jessica Taylor",
-    username: "jessicaT",
+    name: "Manya singh",
+    username: "@man",
     avatar: "https://i.pravatar.cc/150?img=5",
     bio: "Travel photographer | Published in National Geographic",
     isFollowing: false
